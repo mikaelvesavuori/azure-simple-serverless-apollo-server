@@ -1,0 +1,31 @@
+service: azure-simple-serverless-apollo-server
+
+provider:
+  name: azure
+  location: North Europe
+  runtime: nodejs10.x
+
+plugins:
+  - serverless-azure-functions
+
+package:
+  exclude:
+    - local.settings.json
+    - .vscode/**
+
+functions:
+  api:
+    handler: api/api.graphqlHandler
+    events:
+      - http: true
+        x-azure-settings:
+          name: req
+          methods: [
+            "get",
+            "post"
+          ]
+          authLevel: anonymous
+      - http: true
+        x-azure-settings:
+          direction: out
+          name: $return

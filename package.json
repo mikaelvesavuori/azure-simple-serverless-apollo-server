@@ -1,0 +1,26 @@
+{
+  "name": "azure-simple-serverless-apollo-server",
+  "description": "Ready-to-use starter for GraphQL (Apollo Server) running on Azure Functions",
+  "keywords": [
+    "azure",
+    "microsoft azure",
+    "serverless functions",
+    "azure functions",
+    "apollo server",
+    "graphql",
+    "gql",
+    "starter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikaelvesavuori/azure-simple-serverless-apollo-server.git"
+  },
+  "version": "1.0.0",
+  "main": "api/api.js",
+  "author": "Mikael Vesavuori",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-azure-functions": "^2.9.9",
+    "serverless-azure-functions": "^1.0.2"
+  }
+}
