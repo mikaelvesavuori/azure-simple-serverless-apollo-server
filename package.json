@@ -21,6 +21,12 @@
   "license": "MIT",
   "dependencies": {
     "apollo-server-azure-functions": "^2.9.9",
-    "serverless-azure-functions": "^1.0.2"
-  }
+    "serverless-azure-functions": "^1.0.2",
+    "snyk": "^1.317.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
