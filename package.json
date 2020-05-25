@@ -15,14 +15,14 @@
     "type": "git",
     "url": "https://github.com/mikaelvesavuori/azure-simple-serverless-apollo-server.git"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "api/api.js",
   "author": "Mikael Vesavuori",
   "license": "MIT",
   "dependencies": {
-    "apollo-server-azure-functions": "^2.9.9",
-    "serverless-azure-functions": "^1.0.2",
-    "snyk": "^1.317.0"
+    "apollo-server-azure-functions": "^2.13.1",
+    "serverless-azure-functions": "^2.0.4",
+    "snyk": "^1.327.0"
   },
   "scripts": {
     "snyk-protect": "snyk protect",
