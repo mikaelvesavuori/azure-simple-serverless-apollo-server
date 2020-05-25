@@ -3,7 +3,7 @@ service: azure-simple-serverless-apollo-server
 provider:
   name: azure
   location: North Europe
-  runtime: nodejs10.x
+  runtime: nodejs12
 
 plugins:
   - serverless-azure-functions
@@ -20,10 +20,7 @@ functions:
       - http: true
         x-azure-settings:
           name: req
-          methods: [
-            "get",
-            "post"
-          ]
+          methods: ["get", "post"]
           authLevel: anonymous
       - http: true
         x-azure-settings:
