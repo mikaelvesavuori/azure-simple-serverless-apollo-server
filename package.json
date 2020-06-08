@@ -20,7 +20,7 @@
   "author": "Mikael Vesavuori",
   "license": "MIT",
   "dependencies": {
-    "apollo-server-azure-functions": "^2.13.1",
+    "apollo-server-azure-functions": "^2.14.2",
     "serverless-azure-functions": "^2.0.4",
     "snyk": "^1.327.0"
   },
